@@ -19,7 +19,6 @@ console.log(url);
 
 
 app.post("/chat", async (req, res) => {
-    console.log("Here");
     try {
         const { message, file} = req.body;
 
