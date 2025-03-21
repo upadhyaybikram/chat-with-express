@@ -6,7 +6,7 @@ A secure implementation of an AI chatbot powered by Google's Gemini 2.0 Flash mo
 
 - Real-time chat interface with Google Gemini AI
 - Secure API key handling through Node.js backend
-- Uses Gemini 1.5 Flash model for faster responses
+- Uses Gemini 2.0 Flash model for faster responses
 - Clean and responsive UI
 - Support for company-specific customization
 - Cross-browser compatibility
@@ -22,7 +22,7 @@ A secure implementation of an AI chatbot powered by Google's Gemini 2.0 Flash mo
   - Node.js
   - Express.js
 - **AI Integration**:
-  - Google Gemini 1.5 Flash API
+  - Google Gemini 2.0 Flash API
 
 ## 📋 Prerequisites
 
