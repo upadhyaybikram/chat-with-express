@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upadhyaybikram/chat-with-express.git"
+    "url": "git+https://github.com/Gauri-Neupane/chat-with-express.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/upadhyaybikram/chat-with-express/issues"
+    "url": "https://github.com/Gauri-Neupane/chat-with-express/issues"
   },
-  "homepage": "https://github.com/upadhyaybikram/chat-with-express#readme",
+  "homepage": "https://github.com/Gauri-Neupane/chat-with-express#readme",
   "description": "",
   "dependencies": {
     "axios": "^1.7.9",
