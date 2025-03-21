@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 const api_key = process.env.API_KEY;
 console.log(api_key);
-const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${api_key}`;
+const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${api_key}`;
 console.log(url);
 //return;
 

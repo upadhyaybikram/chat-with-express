@@ -1,6 +1,6 @@
 # Secure AI Chatbot with Google Gemini
 
-A secure implementation of an AI chatbot powered by Google's Gemini 1.5 Flash model, featuring backend API key protection and real-time chat capabilities.
+A secure implementation of an AI chatbot powered by Google's Gemini 2.0 Flash model, featuring backend API key protection and real-time chat capabilities.
 
 ## 🌟 Features
 

@@ -33,7 +33,7 @@ const createBotResponse = async (incomingMessageDiv) => {
     const messageElement = incomingMessageDiv.querySelector(".message-text");
 
     try {
-        const response = await fetch("http://localhost:5001/chat", {
+        const response = await fetch("http://localhost:5002/chat", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message: userData.message, file: userData.file.data ? userData.file: null }),
