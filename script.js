@@ -35,7 +35,7 @@ const createBotResponse = async (incomingMessageDiv) => {
     try {
         const baseURL = window.location.hostname === 'localhost' 
             ? 'http://localhost:5002'
-            : 'https://chat-with-express-peach.vercel.app';
+            : 'https://chat-with-express-peach.vercel.app/api';
             
         const response = await fetch(`${baseURL}/chat`, {
             method: "POST",
