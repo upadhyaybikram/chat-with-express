@@ -35,4 +35,3 @@ A secure implementation of an AI chatbot powered by Google's Gemini 2.0 Flash mo
 1. Clone the repository
 2. Create a `.env` file in the root directory
 3. Add your API key to `.env`:
-# CB-final
