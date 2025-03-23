@@ -33,9 +33,17 @@ const createBotResponse = async (incomingMessageDiv) => {
     const messageElement = incomingMessageDiv.querySelector(".message-text");
 
     try {
-        const response = await fetch("http://localhost:5002/chat", {
+        // Use localhost:5002 when running locally with live-server (127.0.0.1:5500)
+        const baseURL = window.location.hostname === '127.0.0.1' 
+            ? 'http://localhost:5002'
+            : 'https://chat-with-express-peach.vercel.app';
+            
+        const response = await fetch(`${baseURL}/chat`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
             body: JSON.stringify({ message: userData.message, file: userData.file.data ? userData.file: null }),
         })
 
@@ -47,13 +55,11 @@ const createBotResponse = async (incomingMessageDiv) => {
     } catch (error) {
         messageElement.innerText = error.message; 
         messageElement.style.color = "#ff0000";
-
     } finally {
         userData.file = {};
         incomingMessageDiv.classList.remove("thinking");
         chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth"});
     }
-
 }
 
 
@@ -181,7 +187,6 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
 
 //keyboard arrwon down event listener 
 closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
-
 
 
 
